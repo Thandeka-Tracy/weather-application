@@ -17,30 +17,48 @@
     <div class="weather-app">
       <head>
         <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="search-input"
+            required
+          />
+          <input type="submit" value="Search" class="submit-button" />
         </form>
       </head>
       <main>
-        <h1>Paris</h1>
-        <div>Thursday 10:56, broken clouds</div>
-        <div>Humidity: 75%, Wind: 4.63km/h</div>
-        <div>⛅15°C</div>
+        <div class="current-weather-details">
+          <h1>Paris</h1>
+          <div class="current-weather-condition">
+            Thursday 10:56, broken clouds
+          </div>
+          <div class="current-weather-condition">
+            Humidity: <span class="humidity">75%</span>, Wind:
+            <span class="windSpeed">4.63km/h</span>
+          </div>
+        </div>
+        <div class="weather-app-temperature">
+          <div class="current-weather-icon">⛅</div>
+          <div class="current-weather-temperature">17</div>
+          <div class="current-weather-unit">°C</div>
+        </div>
       </main>
       <footer>
-        This project was coded by
-        <a href="https://github.com/Thandeka-Tracy" target="_blank"
-          >Thandeka Makamba</a
-        >, is
-        <a
-          href="https://github.com/Thandeka-Tracy/weather-application"
-          target="_blank"
-          >open-sourced on GitHub</a
-        >
-        and
-        <a href="https://weather-app245.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
+        <small>
+          This project was coded by
+          <a href="https://github.com/Thandeka-Tracy" target="_blank"
+            >Thandeka Makamba</a
+          >, is
+          <a
+            href="https://github.com/Thandeka-Tracy/weather-application"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://weather-app245.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </small>
       </footer>
     </div>
     <script src="src/index.js"></script>
