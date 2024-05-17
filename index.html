@@ -16,11 +16,12 @@
   <body>
     <div class="weather-app">
       <head>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             class="search-input"
+            id="search-input"
             required
           />
           <input type="submit" value="Search" class="submit-button" />
@@ -28,18 +29,21 @@
       </head>
       <main>
         <div class="current-weather-details">
-          <h1>Paris</h1>
+          <h1 id="city"></h1>
           <div class="current-weather-condition">
-            Thursday 10:56, broken clouds
+            <span id="current-date"></span>,<span id="condition"></span>
           </div>
           <div class="current-weather-condition">
-            Humidity: <span class="humidity">75%</span>, Wind:
-            <span class="windSpeed">4.63km/h</span>
+            Humidity: <span class="humidity" id="humidity"></span>, Wind:
+            <span class="windSpeed" id="windSpeed"></span>
           </div>
         </div>
         <div class="weather-app-temperature">
-          <div class="current-weather-icon">⛅</div>
-          <div class="current-weather-temperature">17</div>
+          <div class="current-weather-icon" id="current-weather-icon"></div>
+          <div
+            class="current-weather-temperature"
+            id="current-temperature"
+          ></div>
           <div class="current-weather-unit">°C</div>
         </div>
       </main>

@@ -47,7 +47,7 @@ main {
 }
 
 main h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin: 15px 0;
 }
 
@@ -69,23 +69,26 @@ main .humidity,
 
 main .weather-app-temperature {
   display: flex;
-  margin: 20px 18px 0 0;
+  margin: 8px 18px 0 0;
   line-height: 1;
 }
 
 main .current-weather-icon {
   font-size: 50px;
-  margin: 23px 6px;
+  margin: 0;
+  padding-top: 0;
+  line-height: 1;
 }
 
 main .current-weather-temperature {
   font-size: 88px;
   font-weight: 600;
+  padding-top: 6px;
 }
 
 main .current-weather-unit {
   font-size: 28px;
-  margin: 7px 0 0 4px;
+  margin: 13px 0 0 4px;
 }
 
 footer {
