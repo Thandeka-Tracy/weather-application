@@ -71,6 +71,7 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
+  console.log(response.data);
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
@@ -81,7 +82,12 @@ function displayForecast(response) {
           <div class="row">
             <div class="column">
               <div class="weather-forecast-date">${formatDay(day.time)}</div>
-              <div class="weather-forecast-icon">⛅</div>
+              <div>
+                <img src=${day.condition.icon_url}
+                  alt="Weather forecast icon"
+                  class="weather-forecast-icon"
+                />
+              </div>
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">19°</span>
                 <span class="weather-forecast-temperature-min">12°</span>
