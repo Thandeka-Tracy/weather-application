@@ -93,7 +93,9 @@ main .current-weather-unit {
 
 main .weather-forecast {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 10px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .weather-forecast-date {
