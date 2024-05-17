@@ -40,7 +40,7 @@ form .submit-button {
   font-size: 15px;
 }
 
-main {
+main .current-weather-app-data {
   display: flex;
   justify-content: space-between;
   padding: 5px 0 30px 0;

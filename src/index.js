@@ -26,7 +26,6 @@ function formatDate(timeStamp) {
 }
 
 function displayCurrentWeather(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#condition");
   let humidityElement = document.querySelector("#humidity");

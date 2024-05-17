@@ -28,23 +28,37 @@
         </form>
       </head>
       <main>
-        <div class="current-weather-details">
-          <h1 id="city"></h1>
-          <div class="current-weather-condition">
-            <span id="current-date"></span>,<span id="condition"></span>
+        <div class="current-weather-app-data">
+          <div class="current-weather-details">
+            <h1 id="city"></h1>
+            <div class="current-weather-condition">
+              <span id="current-date"></span>,<span id="condition"></span>
+            </div>
+            <div class="current-weather-condition">
+              Humidity: <span class="humidity" id="humidity"></span>, Wind:
+              <span class="windSpeed" id="windSpeed"></span>
+            </div>
           </div>
-          <div class="current-weather-condition">
-            Humidity: <span class="humidity" id="humidity"></span>, Wind:
-            <span class="windSpeed" id="windSpeed"></span>
+          <div class="weather-app-temperature">
+            <div class="current-weather-icon" id="current-weather-icon"></div>
+            <div
+              class="current-weather-temperature"
+              id="current-temperature"
+            ></div>
+            <div class="current-weather-unit">°C</div>
           </div>
         </div>
-        <div class="weather-app-temperature">
-          <div class="current-weather-icon" id="current-weather-icon"></div>
-          <div
-            class="current-weather-temperature"
-            id="current-temperature"
-          ></div>
-          <div class="current-weather-unit">°C</div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="column">
+              <div class="weather-forecast-date">Sat</div>
+              <div class="weather-forecast-icon">⛅</div>
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">19°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
