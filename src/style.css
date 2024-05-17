@@ -113,8 +113,13 @@ main .weather-forecast-temperatures {
   font-weight: 600;
 }
 
+main .weather-forecast-temperature-max {
+  padding-right: 4px;
+}
+
 main .weather-forecast-temperature-min {
   opacity: 0.6;
+  padding-left: 4px;
 }
 
 footer {

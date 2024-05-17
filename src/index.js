@@ -71,7 +71,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
@@ -89,8 +88,12 @@ function displayForecast(response) {
                 />
               </div>
               <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">19°</span>
-                <span class="weather-forecast-temperature-min">12°</span>
+                <span class="weather-forecast-temperature-max">
+                  ${Math.round(day.temperature.maximum)}°
+                </span>
+                <span class="weather-forecast-temperature-min">
+                  ${Math.round(day.temperature.minimum)}°
+                </span>
               </div>
             </div>
           </div>
