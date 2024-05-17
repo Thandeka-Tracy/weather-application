@@ -91,6 +91,30 @@ main .current-weather-unit {
   margin: 13px 0 0 4px;
 }
 
+main .weather-forecast {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .weather-forecast-date {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+main .weather-forecast-icon {
+  font-size: 42px;
+}
+
+main .weather-forecast-temperatures {
+  color: #f65282;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main .weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
 footer {
   font-size: 17px;
   text-align: center;
